@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import {supabase} from "@/external/supabase/client";
-import {QueryData} from "@supabase/supabase-js";
-import {useEffect, useState} from "react";
+import { supabase } from '@/external/supabase/client';
+import { QueryData } from '@supabase/supabase-js';
+import { useEffect, useState } from 'react';
 
 
 export default function Page() {
@@ -14,11 +14,11 @@ export default function Page() {
     const fetchTodos = async () => {
       const { data: todos, error } = await getTodosQuery;
 
-      if (error) console.log('error', error)
-      else setTodos(todos)
-    }
-    fetchTodos()
-  }, [supabase])
+      if (error) console.log('error', error);
+      else setTodos(todos);
+    };
+    fetchTodos();
+  }, [supabase]);
   return (
     <div>
       <h1 className="font-bold">Todo</h1>
