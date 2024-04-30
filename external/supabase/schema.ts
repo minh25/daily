@@ -15,6 +15,7 @@ export type Database = {
           created_at: string
           due_date_at: string | null
           id: number
+          is_completed: boolean
           order: number | null
         }
         Insert: {
@@ -22,6 +23,7 @@ export type Database = {
           created_at?: string
           due_date_at?: string | null
           id?: number
+          is_completed?: boolean
           order?: number | null
         }
         Update: {
@@ -29,6 +31,7 @@ export type Database = {
           created_at?: string
           due_date_at?: string | null
           id?: number
+          is_completed?: boolean
           order?: number | null
         }
         Relationships: []
