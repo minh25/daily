@@ -37,7 +37,7 @@ export const Task = ({
         <div>
           <input
             className="cursor-pointer"
-            onChange={(e) => toggle()}
+            onChange={(_e) => toggle()}
             type="checkbox"
             checked={isCompleted}
           />
